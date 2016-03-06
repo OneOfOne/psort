@@ -3,12 +3,12 @@ Parallel sort, based on the std lib.
 
 This is a PoC parellel version of the standard library's sort.Sort, shows quiet an improvement however it uses a lot more allocations.
 
-It is slower for < ~10k elements as demonstrated in the stdlib's sort benchmarks, however for >10k the improvements are between 15%.
+It is slower for < ~10k elements as demonstrated in the stdlib's sort benchmarks, however for >10k the improvements are over 15%.
 
 ## index/suffixarray
 
 ``` sh
-# go test -v -bench=NewIndex -benchtime=1s -benchmem -count 5
+# go test -v -bench=NewIndex -benchmem -count 5
 ➜ benchstat {old,new}.txt
 name              old time/op    new time/op    delta
 NewIndexRandom-8     203ms ± 0%     208ms ± 2%    +2.49%  (p=0.008 n=5+5)
