@@ -3,7 +3,9 @@ Parallel sort, based on the std lib.
 
 This is a PoC parellel version of the standard library's sort.Sort, shows quiet an improvement however it uses a lot more allocations.
 
-It is slower for < ~10k elements as demonstrated in the stdlib's sort benchmarks, however for >10k the improvements are over 15%.
+It is slower for < ~10k elements as demonstrated in the stdlib's sort benchmarks, however for >5k the improvements are over 15%.
+
+* updated benchmarks due to golang/go#14677
 
 ## index/suffixarray
 
