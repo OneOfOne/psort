@@ -227,7 +227,7 @@ func Sort(data Interface) {
 		maxDepth++
 	}
 	maxDepth *= 2
-	if n >= 1000 {
+	if n >= 5000 {
 		pSort(data, n, maxDepth)
 	} else {
 		quickSort(data, 0, n, maxDepth)
